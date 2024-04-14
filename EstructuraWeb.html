@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Estilos/EstilosBLue.css" />
     <link rel="shortcut icon" href="Imagenes/Logo.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
     <title>Bordando Elegancia POLINARIA</title>
   </head>
   <body>
+
     <header class="header">
       <div class="menu container">
         <a href="#" class="logo">Logo</a>
@@ -20,16 +23,14 @@
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Producto</a></li>
+            <li><a href="#">Calificacion</a></li>
             <li><a href="#">Contacto</a></li>
           </ul>
         </nav>
         <div>
           <ul>
             <li class="submenu">
-              <img
-                id="img-carrito"
-                src="Imagenes/carrito-de-compras.png"
-                alt="car">
+              <img id="img-carrito" src="Imagenes/carrito-de-compras.png" alt="carrito">
               <div id="carrito">
                 <table id="lista-carrito">
                   <thead>
@@ -46,26 +47,25 @@
             </li>
           </ul>
         </div>
-    </div>
-        <div class="header-content conteiner">
-          <div class="header-txt">
-            <span>Bienvenido a nuestra tienda</span>
-            <h1>Ofertas Especiales</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-              magni quisquam voluptas obcaecati laboriosam dignissimos odit? Cum
-              sit nemo culpa.
-            </p>
-            <div class="butons">
-              <a href="#" class="btn-1">Informacion</a>
-              <a href="#" class="btn-1">Leer Mas</a>
-            </div>
-          </div>
-          <div class="header-img">
-            <img src="Imagenes/Repet01.jpeg" alt="" />
+      </div>
+      <div class="header-content container">
+        <div class="header-txt">
+          <span>Bienvenido a nuestra tienda</span>
+          <h1>Ofertas Especiales</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, magni quisquam voluptas obcaecati laboriosam dignissimos odit? Cum sit nemo culpa.</p>
+          <div class="butons">
+            <a href="#" class="btn-1">Informacion</a>
+            <a href="#" class="btn-1">Leer Mas</a>
           </div>
         </div>
+        <div class="header-img">
+          <img src="Imagenes/Repet01.png" alt="" />
+        </div>
+      </div>
     </header>
+    
+
+    
      <section class="oferts conteiner">
         <div class="ofert-1 b1">
             <div class="ofert-txt">
@@ -94,7 +94,7 @@
 
         </div>
         <div class="ofert-img">
-            <img src="Imagenes/Repet04.jpeg" alt="">
+            <img src="Imagenes/Repet04.png" alt="">
         </div>
         </div>
      </section>
@@ -103,7 +103,7 @@
          <h2>Productos Destacados</h2>
          <div class="box-container " id="lista-1">
             <div class="box">
-                <img src="Imagenes/Repet01.jpeg" alt="">
+                <img src="Imagenes/Repet01.png" alt="">
                 <div class="product-txt">
                     <h3>Elisom</h3>
                     <p>Calidad Premium</p>
@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="Imagenes/Repet04.jpeg" alt="">
+                <img src="Imagenes/Repet04.png" alt="">
                 <div class="product-txt">
                     <h3>Elisom</h3>
                     <p>Calidad Premium</p>
@@ -195,6 +195,9 @@
          </div> 
          <div class="btn-2" id="load-more"> Cargar Mas </div>
      </main>
+
+
+
      <section class="testimonial container">
        <span>testimoniales</span>
        <h2>Que opinan nuestros clientes</h2>
@@ -225,6 +228,9 @@
         </div>
        </div>
      </section>
+
+
+
      <footer class="footer">
       <div class="footer-content container">
         <div class="link">
@@ -265,8 +271,41 @@
         </div>
       </div>
      </footer>
-     <section class="contactos container">
 
+
+     <section class="contactos-card container" id="red">
+        
+        <div class="contactos">
+          <div class="box-info">
+            <h1>CONTACTATE CON NOSOTROS</h1>
+          <div class="data">
+             <p><i class="fa-solid fa-phone"></i>+51 900 263 168</p>
+             <p><i class="fa-solid fa-envelope"></i>elvisantoniovegamiranda@gmail.com</p>
+             <p><i class="fa-solid fa-location-dot"></i>Peru, Ancash, Pomabamba giron huaraz </p>
+          </div>
+          <div class="links">
+            <a href="#"><i class="fa-brands  fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands  fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <form action="">
+            <div class="input-box">
+                <input type="text" required placeholder="Nombre  y Apellido"/>
+            </div>
+            <div class="input-box">
+                <input type="text" required placeholder="Correo Electronico"/>
+            </div>
+            <div class="input-box">
+                <input type="text" required placeholder="Asunto"/>
+            </div>
+            <div class="input-box">
+                <textarea name="" id="" cols="30" rows="10" class="input-box" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+        </div>
      </section> 
     <script src="Scripts/Componentes.js"></script>
   </body>
