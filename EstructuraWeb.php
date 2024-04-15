@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['usuario'])){
+  header("location: IngresoLoginIngreso.php");
+  exit(); // Asegúrate de salir del script después de la redirección
+}
+session_destroy(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +20,7 @@
   </head>
   <body>
 
-    <header class="header">
+    <header id="inicio" class="header">
       <div class="menu container">
         <a href="#" class="logo">Logo</a>
         <input type="checkbox" id="menu" />
@@ -20,11 +29,12 @@
         </label>
         <nav class="navbar">
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Producto</a></li>
-            <li><a href="#">Calificacion</a></li>
-            <li><a href="#">Contacto</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#producto">Producto</a></li>
+<li><a href="#calificacion">Calificacion</a></li>
+<li><a href="#contacto">Contacto</a></li>
+
           </ul>
         </nav>
         <div>
@@ -66,7 +76,7 @@
     
 
     
-     <section class="oferts conteiner">
+     <section id="ofertas" class="oferts conteiner">
         <div class="ofert-1 b1">
             <div class="ofert-txt">
             <h3>Lorem ipsum dolor sit.</h3>
@@ -99,7 +109,7 @@
         </div>
      </section>
 
-     <main class="products container">
+     <main id="productos" class="products container">
          <h2>Productos Destacados</h2>
          <div class="box-container " id="lista-1">
             <div class="box">
@@ -198,7 +208,7 @@
 
 
 
-     <section class="testimonial container">
+     <section id="Testimonio" class="testimonial container">
        <span>testimoniales</span>
        <h2>Que opinan nuestros clientes</h2>
        <div class="testimonial-content">
@@ -231,7 +241,7 @@
 
 
 
-     <footer class="footer">
+     <footer id="otros" class="footer">
       <div class="footer-content container">
         <div class="link">
             <h3>lorem</h3>
@@ -273,7 +283,7 @@
      </footer>
 
 
-     <section class="contactos-card container" id="red">
+     <section class="contactos-card container" id="contacto">
         
         <div class="contactos">
           <div class="box-info">

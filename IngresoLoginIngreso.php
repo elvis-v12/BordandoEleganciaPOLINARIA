@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,19 +28,19 @@
     <!--Fomulario de registro login-->
    <div class="contenedor__login-registrar">
     <!--login-->
-    <form action="" class="formulario__login">
+    <form action="php/login_usuario_be.php" method="POST" class="formulario__login">
         <h2>Inciar Sesion</h2>
-        <input type="text" placeholder="Correo electronico">
-        <input type="password" placeholder="Contraseña">
+        <input type="text" placeholder="Correo electronico" name="correo">
+        <input type="password" placeholder="Contraseña" name=contrasena>
         <button>Entrar</button>
     </form>
     <!-- Registro -->
-    <form action="" class="formulario__registrar">
+    <form action="php/registro_usuario_be.php" method="POST" class="formulario__registrar">
 <h2>Registrarte</h2>
-<input type="text" placeholder="Nombre completo">
-<input type="text" placeholder="Correo electronico">
-<input type="text" placeholder="Usuario">
-<input type="password" placeholder="Contraseña">
+<input type="text" placeholder="Nombre completo" name="nombre_completo">
+<input type="text" placeholder="Correo electronico" name="correo">
+<input type="text" placeholder="Usuario" name="usuario">
+<input type="password" placeholder="Contraseña" name="contrasena">
 <button>Registrarme</button>
     </form>
    </div>
